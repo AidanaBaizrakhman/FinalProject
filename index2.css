@@ -1,0 +1,72 @@
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+  font-family: Gilroy;
+  color: #263557;
+  --bg-color: #F2F6FF;
+  --bu-color: #2E28F7;
+  --og-color: #FF6109;
+  --tx-color: #263557;
+  --gr-color: #686E7B;
+}
+
+.container-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.332);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10000000000;
+}
+.container-modal__window {
+  width: 448px;
+  height: 466px;
+  background-color: white;
+  border-radius: 10px;
+}
+.container-modal__window__header {
+  width: 100%;
+  height: 88px;
+  background-color: var(--tx-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container-modal__window__header img {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.container-modal__window__header span {
+  color: white;
+  font-size: 24px;
+}
+.container-modal__window .container-stillhavequestions__form {
+  height: 378px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.container-modal__window .container-stillhavequestions__form__form__inputs {
+  margin-bottom: 24px;
+  width: 320px;
+}
+.container-modal__window .container-stillhavequestions__form__form__inputs input {
+  width: 320px;
+}
+.container-modal__window .container-stillhavequestions__form__form__checkbox {
+  width: 320px;
+  margin-bottom: 24px;
+}
+.container-modal__window .container-stillhavequestions__form__form button {
+  width: 320px;
+}/*# sourceMappingURL=index2.css.map */

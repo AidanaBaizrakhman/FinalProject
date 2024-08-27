@@ -1,0 +1,72 @@
+body {
+    height: 100%;
+    overflow: hidden;
+}
+:root {
+    font-family: Gilroy;
+    color: #263557;
+    --bg-color: #F2F6FF;
+    --bu-color: #2E28F7;
+    --og-color: #FF6109;
+    --tx-color: #263557;
+    --gr-color: #686E7B;
+}
+.container-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.332);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10000000000;
+    &__window {
+        width: 448px;
+        height: 466px;
+        background-color: white;
+        border-radius: 10px;
+        &__header {
+            width: 100%;
+            height: 88px;
+            background-color: var(--tx-color);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            img {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+            }
+            span {
+                color: white;
+                font-size: 24px;
+            }
+        }
+        .container-stillhavequestions__form {
+            height: 378px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            &__form {
+                &__inputs {
+                    margin-bottom: 24px;
+                    width: 320px;
+                    input {
+                        width: 320px;
+                    }
+                }
+                &__checkbox {
+                    width: 320px;
+                    margin-bottom: 24px;
+                }
+                button {
+                    width: 320px;
+                }
+            }
+        }
+    }
+}

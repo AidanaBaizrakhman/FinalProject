@@ -1,0 +1,64 @@
+:root {
+    font-family: Gilroy;
+    color: #263557;
+    --bg-color: #F2F6FF;
+    --bu-color: #2E28F7;
+    --og-color: #FF6109;
+    --tx-color: #263557;
+    --gr-color: #686E7B;
+}
+@mixin Buttons {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--og-color);
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0px 8px 32px 0px rgb(231, 83, 0, 0.24);
+    height: 56px;
+}
+@mixin Buttons-hover {
+    cursor: pointer;
+    background-color: #ff7b34;
+}
+@mixin Buttons-active {
+    background-color: #ff975f;
+    box-shadow: none;
+    transform: scale(90%);
+}
+body {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container-404 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            &__404 {
+                font-size: 144px;
+                font-family: Gilroy-Bold;
+            }
+            &__text {
+                font-size: 20px;
+            }
+            button {
+                @include Buttons;
+                &:hover {
+                    @include Buttons-hover;
+                }
+                &:active {
+                    @include Buttons-active;
+                }
+            }
+        }
+    }
+}
